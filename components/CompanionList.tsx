@@ -52,7 +52,7 @@ const CompanionList = ({ title, companions, classNames }: CompanionsListProps) =
                       </Link>
                     </TableCell>
                     <TableCell>
-                      <div className="subject-badge w-fit max-md: hidden">
+                      <div className="subject-badge w-fit max-md:hidden">
                         {subject}
                       </div>
 
