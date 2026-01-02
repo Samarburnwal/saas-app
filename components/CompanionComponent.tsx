@@ -144,12 +144,12 @@ const CompanionComponent = ({ companionId, subject, topic, name, userName, userI
             </div>
         </section>
 
-        <section className='transcript'>
-            <div className='transcript-message no-scrollbar'>
+        <section className='transcript w-2/3'>
+            <div className='no-scrollbar'>
                 {messages.map((message, index) => {
                     if(message.role === 'assistant') {
                         return (
-                            <p key={index} className='max-sm:text-sm'>
+                            <p key={index} className='text-primary max-sm:text-sm'>
                                 {
                                 name
                                 .split('')[0]
@@ -165,9 +165,10 @@ const CompanionComponent = ({ companionId, subject, topic, name, userName, userI
                         </p>
                     }
                 })}
+                {/* <p className='text-primary max-sm:text-sm'>message</p> */}
             </div>
-
-            <div className="transcript-fade"/>
+                
+            {/* <div className="transcript-fade"/> */}
         </section>
     </section>
   )
